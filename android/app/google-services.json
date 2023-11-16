@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "244756894533",
+    "project_id": "baat-chit-85abb",
+    "storage_bucket": "baat-chit-85abb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244756894533:android:8fe4204a02f786f83ea42c",
+        "android_client_info": {
+          "package_name": "com.example.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244756894533-fvis4f147mg2dsqkrqbe95ondr4jeaen.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chat_app",
+            "certificate_hash": "ea40663d9145bceb753fa5a73b43119ef369e1d9"
+          }
+        },
+        {
+          "client_id": "244756894533-6iilgf23uimjsjupb5ede99lce5gtplt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQUfY7_VJw-yqA1yxgpAwW3KPO__j_PRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244756894533-6iilgf23uimjsjupb5ede99lce5gtplt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "244756894533-j1l7b4c02gafnvnjhu4deuiis3k49kh1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.chatApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

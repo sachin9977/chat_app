@@ -219,6 +219,7 @@ class APIs {
     await firestore.collection('users').doc(user.uid).update({
       'image': me.image,
     });
+    
   }
 
 // for getting specific user info.

@@ -50,6 +50,7 @@ class ProfileProvider extends ChangeNotifier {
         await picker.pickImage(source: ImageSource.camera, imageQuality: 80);
     if (image != null) {
       Navigator.pop(context);
+      
       _image = image.path;
       notifyListeners();
       updateProfilePic(File(_image!));

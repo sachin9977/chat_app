@@ -26,7 +26,7 @@ class APIs {
 
   static FirebaseMessaging fMessaging = FirebaseMessaging.instance;
 
-// for getting firebase Message Token
+// for getting FCM firebase Message Token
 
   static Future<void> getFirebaseMsgToken() async {
     await fMessaging.requestPermission();

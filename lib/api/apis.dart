@@ -138,24 +138,6 @@ class APIs {
         .set(chatUser.toJson());
   }
 
-  // // For getting all users from firestore database
-  // static Stream<QuerySnapshot<Map<String, dynamic>>> getAllUsers(
-  //     List<String> userIds) {
-  //   return APIs.firestore
-  //       .collection('users')
-  //       .where('id', whereIn: userIds)
-  //       .snapshots();
-  // }
-
-  // // For getting id's of known user from firestore database
-  // static Stream<QuerySnapshot<Map<String, dynamic>>> getMyUserId() {
-  //   return APIs.firestore
-  //       .collection('users')
-  //       .doc(user.uid)
-  //       .collection('my_users')
-  //       .snapshots();
-  // }
-
   // For getting all users from firestore database
   static Stream<QuerySnapshot<Map<String, dynamic>>> getAllUsers(
       List<String> userIds) {

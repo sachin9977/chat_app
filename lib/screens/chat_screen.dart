@@ -6,6 +6,7 @@ import 'package:chat_app/helper/my_date_util.dart';
 import 'package:chat_app/main.dart';
 import 'package:chat_app/models/chat_user.dart';
 import 'package:chat_app/models/message.dart';
+import 'package:chat_app/screens/video_call.dart';
 import 'package:chat_app/screens/view_profile_screen.dart';
 import 'package:chat_app/widgets/msg_card.dart';
 import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
@@ -128,7 +129,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   Widget _AppBar() {
     return InkWell(
-        onTap: () {
+        onTap: () async {
           Navigator.push(
               context,
               MaterialPageRoute(
@@ -195,7 +196,39 @@ class _ChatScreenState extends State<ChatScreen> {
                       ),
                     ),
                   ],
-                )
+                ),
+
+                SizedBox(
+                  width: 5,
+                ),
+                // IconButton(
+                //     onPressed: () {
+                //       // Navigator.push(
+                //       //     context,
+                //       //     MaterialPageRoute(
+                //       //       builder: (context) => VideoCallScreen(
+                //       //         user: widget.user,
+                //       //       ),
+                //       // ));
+                //     },
+                //     icon: Icon(
+                //       Icons.phone,
+                //       color: Colors.white,
+                //     )),
+                IconButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => VideoCallScreen(
+                              user: widget.user,
+                            ),
+                          ));
+                    },
+                    icon: Icon(
+                      Icons.videocam,
+                      color: Colors.white,
+                    ))
               ],
             );
           },

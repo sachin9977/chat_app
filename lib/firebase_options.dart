@@ -65,6 +65,6 @@ class DefaultFirebaseOptions {
     storageBucket: 'baat-chit-85abb.appspot.com',
     androidClientId: '244756894533-fvis4f147mg2dsqkrqbe95ondr4jeaen.apps.googleusercontent.com',
     iosClientId: '244756894533-j1l7b4c02gafnvnjhu4deuiis3k49kh1.apps.googleusercontent.com',
-    iosBundleId: 'com.example.chatApp',
+    iosBundleId: 'com.chat.baatchit',
   );
 }

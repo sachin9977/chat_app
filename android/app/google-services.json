@@ -34,7 +34,7 @@
               "client_id": "244756894533-j1l7b4c02gafnvnjhu4deuiis3k49kh1.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.chatApp"
+                "bundle_id": "com.chat.baatchit"
               }
             }
           ]
@@ -78,7 +78,7 @@
               "client_id": "244756894533-j1l7b4c02gafnvnjhu4deuiis3k49kh1.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.chatApp"
+                "bundle_id": "com.chat.baatchit"
               }
             }
           ]

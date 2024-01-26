@@ -34,9 +34,13 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Baat-Chit',
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          fontFamily: 'CrimsonText',
+          colorScheme:
+              ColorScheme.fromSeed(seedColor: Color.fromARGB(179, 11, 2, 31)),
         ),
-        home: SplashScreen());
+        home: SplashScreen()
+        // home: AddFriend()
+        );
   }
 }
 

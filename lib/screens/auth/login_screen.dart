@@ -20,7 +20,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     Future.delayed(Duration(milliseconds: 500), () {
       setState(() {
@@ -37,8 +36,6 @@ class _LoginScreenState extends State<LoginScreen> {
       Navigator.pop(context);
       if (user != null) {
         print(user.user);
-        print("user.user6666666666666666666666");
-
         if ((await APIs.userExists())) {
           Navigator.pushReplacement(
               context,

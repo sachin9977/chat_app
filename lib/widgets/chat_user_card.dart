@@ -23,9 +23,9 @@ class _ChatUserCardState extends State<ChatUserCard> {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-      margin: EdgeInsets.symmetric(horizontal: mq.width * .03, vertical: 4),
+    return Container(
+      // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+      margin: EdgeInsets.symmetric(horizontal: mq.width * .03, vertical: 0),
       child: InkWell(
           onTap: () {
             Navigator.push(
@@ -47,6 +47,7 @@ class _ChatUserCardState extends State<ChatUserCard> {
               if (list.isNotEmpty) _message = list[0];
 
               return ListTile(
+                  // contentPadding: EdgeInsets.all(0),
                   leading: InkWell(
                     onTap: () {
                       showDialog(
@@ -57,8 +58,8 @@ class _ChatUserCardState extends State<ChatUserCard> {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(mq.height * .3),
                       child: CachedNetworkImage(
-                        width: mq.height * .055,
-                        height: mq.height * .055,
+                        width: mq.height * .070,
+                        height: mq.height * .070,
                         imageUrl: widget.user.image,
                         // placeholder: (context, url) => CircularProgressIndicator(),
                         errorWidget: (context, url, error) => CircleAvatar(
@@ -67,7 +68,10 @@ class _ChatUserCardState extends State<ChatUserCard> {
                       ),
                     ),
                   ),
-                  title: Text(widget.user.name),
+                  title: Text(
+                    widget.user.name,
+                    style: TextStyle(fontSize: 20),
+                  ),
                   subtitle: Text(
                     _message != null
                         ? _message!.type == Type.image

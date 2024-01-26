@@ -129,6 +129,7 @@ class APIs {
         isOnline: false,
         id: user.uid,
         lastActive: time,
+        
         email: user.email.toString(),
         pushToken: '');
 
